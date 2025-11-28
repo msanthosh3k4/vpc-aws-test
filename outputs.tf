@@ -8,3 +8,7 @@
 # output "default_vpc" {
 #     value = module.vpc.default.id
 # }
+
+output "public_subnet" {
+  value       = module.vpc.public_subnet_ids
+}
